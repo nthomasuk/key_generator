@@ -1,13 +1,13 @@
-window.addEventListener("keydown", (x) => {
+window.addEventListener("keydown", (event) => {
 	const key = document.getElementById("event.key");
 	const location = document.getElementById("event.location");
 	const which = document.getElementById("event.which");
 	const code = document.getElementById("event.code");
 	const generated = document.getElementById("generated");
 
-    key.innerText = x.key;
-	location.innerText = x.location;
-	which.innerText = x.which;
-	code.innerText = x.code;
-    generated.innerText = x.which;
+    key.innerText = event.key;
+	location.innerText = event.location;
+	which.innerText = event.which;
+	code.innerText = event.code;
+    generated.innerText = event.which;
 })
